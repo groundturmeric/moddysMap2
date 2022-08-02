@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  margin-top: 2%;
+  /* background-color: rgb(214, 218, 228); */
+  background-color: #03041f;
+
+  font-family: adobe-garamond-pro, serif;
+
+}
+
+#chart {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+.continent{
+  fill:#09173c;
+}
+
+/* "#1a9fdc", "#b0ddd3", "#052e9d", "#f5943d" */
+
+
+.axis {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* font-family: adobe-garamond-pro, serif; */
+  /* font-size: 16pt; */
+  /* font-weight: bold; */
+}
+
+.axis {
+  font-size: 12pt;
+}
+
+g.axis path {
+  display: none;
+}
+
+.tooltip {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  background-color: rgba(255, 238, 126, 0.5);
+  padding: 2px;
+  pointer-events: none;
+}
+
+
+
+/* 
+#chart--container {
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+} */
+
+/* #chart {
+  width: 100%;
+  flex: 1 0 80%;
+  max-height: 80vh;
+  position: relative;
+} */
+
+
+
+
+.Button {
+
+  align-items: center;
+  appearance: button;
+  /* background-color: #0276FF; */
+  background-color: #4c4d64;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  /* display: flex; */
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  /* font-size: 100%; */
+  line-height: 1.15;
+  margin: 0;
+  padding: 5px 13px;
+  text-align: center;
+  /* text-transform: none; */
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  /* -webkit-user-select: none; */
+  /* touch-action: manipulation; */
+
+  /* color:#02103a; */
+  /* border: 2px solid #0028a1; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* fill background color */
+.Button:hover {
+  /* background: rgba(242, 242, 242, 1); */
+  background-color: #1C84FF;
+}
+
+.Button:active {
+  background-color: #006AE8;
+}
+
+.button-22:hover {
+  background-color: #1C84FF;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* the conditions used to define 
+these media queries are the max-width of the device or screen width.
+the firs one applies for screens under 800px
+if screen are under 500px the the second query is applied */
+
+
+@media only screen and (min-width: 1000px) {
+
+
+
+}
+
+
+@media only screen and (max-width: 948px) {
+
+
+  .axis {
+    font-size: 8pt;
+  }
+  
+}
+
+/* second query should come after first, order matters since some of the 
+change is comes from the first query... it is also smaller than 800px */
+@media only screen and (max-width: 500px) {
+
+}
+
+
+
+
+
+
